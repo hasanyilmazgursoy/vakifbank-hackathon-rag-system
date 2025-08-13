@@ -1,7 +1,7 @@
 # 🏦 Advanced RAG System - VakıfBank Hackathon Project
 
 ## 🏆 Hackathon Achievement
-Bu proje, **VakıfBank #HackToTheFuture 2024** hackathonunda 250'den fazla takım arasından sıyrılarak **finale kalan 14 takım** arasında yer almıştır! 48 saatlik yoğun geliştirme sürecinin sonucunda ortaya çıkan bu RAG destekli chatbot sistemi, bankacılık sektöründe yapay zeka teknolojilerinin kullanımını göstermektedir.
+Bu proje, *VakıfBank #HackToTheFuture 2024* hackathonunda 250'den fazla takım arasından sıyrılarak *finale kalan 14 takım* arasında yer almıştır! 48 saatlik yoğun geliştirme sürecinin sonucunda ortaya çıkan bu RAG destekli chatbot sistemi, bankacılık sektöründe yapay zeka teknolojilerinin kullanımını göstermektedir.
 
 ## 🎯 Proje Özeti
 Advanced RAG (Retrieval-Augmented Generation) System, LangGraph ve OpenAI teknolojilerini kullanarak geliştirilmiş akıllı bir soru-cevap sistemidir. Sistem, bankacılık belgelerini analiz ederek kullanıcı sorularına doğru ve güvenilir yanıtlar üretir.
@@ -9,21 +9,21 @@ Advanced RAG (Retrieval-Augmented Generation) System, LangGraph ve OpenAI teknol
 ## ✨ Özellikler
 
 ### 🧠 Akıllı Yönlendirme
-- **Otomatik Soru Sınıflandırma**: Gelen sorular bankacılık ile ilgili mi yoksa genel mi olduğunu belirler
-- **Dinamik Yönlendirme**: Sorulara göre vectorstore arama veya müşteri hizmetlerine yönlendirme
+- *Otomatik Soru Sınıflandırma*: Gelen sorular bankacılık ile ilgili mi yoksa genel mi olduğunu belirler
+- *Dinamik Yönlendirme*: Sorulara göre vectorstore arama veya müşteri hizmetlerine yönlendirme
 
 ### 📋 Gelişmiş RAG Pipeline
-- **Belge Alma (Retrieval)**: Chroma vektör veritabanından ilgili belgelerin getirilmesi
-- **Belge Değerlendirme**: Getirilen belgelerin soruyla ilgili olup olmadığının kontrolü
-- **Hallüsinasyon Kontrolü**: Üretilen yanıtların belgelerle uyumlu olup olmadığının doğrulanması
-- **Yanıt Kalite Kontrolü**: Yanıtların soruyu yeterli şekilde cevaplayıp cevaplayamadığının değerlendirilmesi
+- *Belge Alma (Retrieval)*: Chroma vektör veritabanından ilgili belgelerin getirilmesi
+- *Belge Değerlendirme*: Getirilen belgelerin soruyla ilgili olup olmadığının kontrolü
+- *Hallüsinasyon Kontrolü*: Üretilen yanıtların belgelerle uyumlu olup olmadığının doğrulanması
+- *Yanıt Kalite Kontrolü*: Yanıtların soruyu yeterli şekilde cevaplayıp cevaplayamadığının değerlendirilmesi
 
 ### 🔧 Modüler Mimari
-- **LangGraph Workflow**: Graf tabanlı iş akışı yönetimi
-- **Zincirli İşlemler**: Modüler ve genişletilebilir chain yapısı
-- **Durum Yönetimi**: Merkezi state management sistemi
+- *LangGraph Workflow*: Graf tabanlı iş akışı yönetimi
+- *Zincirli İşlemler*: Modüler ve genişletilebilir chain yapısı
+- *Durum Yönetimi*: Merkezi state management sistemi
 
-## 🏗️ Sistem Mimarisi
+## 🏗 Sistem Mimarisi
 
 ```mermaid
 graph TD
@@ -130,70 +130,61 @@ AdvancedRagSystem/
 ## 🔧 Teknik Detaylar
 
 ### Kullanılan Teknolojiler
-- **LangChain**: LLM uygulamaları için framework
-- **LangGraph**: Graf tabanlı iş akışı yönetimi
-- **OpenAI GPT**: Dil modeli
-- **Chroma**: Vektör veritabanı
-- **Embeddings**: OpenAI text-embedding-ada-002
+- *LangChain*: LLM uygulamaları için framework
+- *LangGraph*: Graf tabanlı iş akışı yönetimi
+- *OpenAI GPT*: Dil modeli
+- *Chroma*: Vektör veritabanı
+- *Embeddings*: OpenAI text-embedding-ada-002
 
 ### Veri İşleme
-- **Belge Formatı**: DOCX dosyaları
-- **Metin Bölme**: RecursiveCharacterTextSplitter (1000 karakter, 100 overlap)
-- **Vektörleştirme**: OpenAI Embeddings
-- **Depolama**: Chroma vektör veritabanı
+- *Belge Formatı*: DOCX dosyaları
+- *Metin Bölme*: RecursiveCharacterTextSplitter (1000 karakter, 100 overlap)
+- *Vektörleştirme*: OpenAI Embeddings
+- *Depolama*: Chroma vektör veritabanı
 
 ### Kalite Kontrol Mekanizmaları
-1. **Belge Relevans Kontrolü**: Getirilen belgelerin soruyla ilgili olup olmadığını kontrol eder
-2. **Hallüsinasyon Kontrolü**: Üretilen yanıtların kaynak belgelerle tutarlı olup olmadığını doğrular
-3. **Yanıt Kalite Kontrolü**: Yanıtların soruyu yeterli şekilde cevaplayıp cevaplayamadığını değerlendirir
+1. *Belge Relevans Kontrolü*: Getirilen belgelerin soruyla ilgili olup olmadığını kontrol eder
+2. *Hallüsinasyon Kontrolü*: Üretilen yanıtların kaynak belgelerle tutarlı olup olmadığını doğrular
+3. *Yanıt Kalite Kontrolü*: Yanıtların soruyu yeterli şekilde cevaplayıp cevaplayamadığını değerlendirir
 
 ## 🎓 Öğrenilen Dersler
 
 Bu hackathon süreci boyunca:
-- **İnovasyon**: Yapay zeka teknolojilerinin bankacılık sektöründeki potansiyeli
-- **Zaman Yönetimi**: 48 saatlik sıkışık programda verimli çalışma
-- **Ekip Çalışması**: Multidisipliner ekip koordinasyonu
-- **Problem Çözme**: Gerçek dünya problemlerine teknoloji tabanlı çözümler
+- *İnovasyon*: Yapay zeka teknolojilerinin bankacılık sektöründeki potansiyeli
+- *Zaman Yönetimi*: 48 saatlik sıkışık programda verimli çalışma
+- *Ekip Çalışması*: Multidisipliner ekip koordinasyonu
+- *Problem Çözme*: Gerçek dünya problemlerine teknoloji tabanlı çözümler
 
 ## 👥 Takım
 
-- **Hasan**: Proje lideri ve geliştirici
-- **Fuat Yavaş**: Geliştirici
-- **İsmail Şahin**: Geliştirici
+- *Fuat Yavaş*: Proje lideri ve geliştirici
+- *Hasan Yılmaz Gürsoy*: Geliştirici
+- *İsmail Şahin*: Geliştirici
 
 ## 🙏 Teşekkürler
 
 Bu projenin başarısında emeği geçen herkese teşekkürlerimizi sunarız:
 
 ### Jüri Üyeleri
-- **Metin Recep ZAFER** - VakıfBank Genel Müdür Yardımcısı
-- **Ferkan MERDAN** - VakıfBank Genel Müdür Yardımcısı
-- **Timur SIRT** - Gazeteci
-- **Prof. Dr. Sahin Albayrak**
-- **Prof. Dr. Özer KÖSEOĞLU**
+- *Metin Recep ZAFER* - VakıfBank Genel Müdür Yardımcısı
+- *Ferkan MERDAN* - VakıfBank Genel Müdür Yardımcısı
+- *Timur SIRT* - Gazeteci
+- *Prof. Dr. Sahin Albayrak*
+- *Prof. Dr. Özer KÖSEOĞLU*
 
 ### Mentörler
-- **Furkan Keskiner** - Ana Mentör
-- **Mehmet Serhat Keskin**
-- **Suha Erdem Yabas**
-- **Beyza Oksar**
+- *Furkan Keskiner* - Ana Mentör
+- *Mehmet Serhat Keskin*
+- *Suha Erdem Yabas*
+- *Beyza Okşar*
 
 ### Organizasyon
-- **İlter Haliloglu** ve ekibi - VakıfBank #HackToTheFuture 2024 organizasyonu
+- *İlter Haliloglu* ve ekibi - VakıfBank #HackToTheFuture 2024 organizasyonu
 
 ## 📝 Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasına bakınız.
 
-## 🔮 Gelecek Geliştirmeler
-
-- [ ] Web arayüzü eklenmesi
-- [ ] Çoklu dil desteği
-- [ ] Sesli sorgu desteği
-- [ ] Mobil uygulama entegrasyonu
-- [ ] Daha gelişmiş belge formatları desteği
-- [ ] Real-time öğrenme mekanizması
-
 ---
 
-**VakıfBank #HackToTheFuture 2024** - Yapay zekanın gücüyle bankacılığın geleceğini şekillendiriyoruz! 🚀
+*VakıfBank #HackToTheFuture 2024* - Yapay zekanın gücüyle bankacılığın geleceğini şekillendiriyoruz! 🚀
